@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.facebook_login.MavenFacebook"/>
+      <class name="com.facebook_login.LoginTest"/>
+      <class name="btes.Assignment.Btes_AssignmwntDemoClass"/>
+      <class name="com.facebook_login.OrangeAdminDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="btes.Assignment.Btes_AssignmwntDemoClass">
+        <methods>
+          <include name="Excel"/>
+          <include name="Login"/>
+          <include name="AddBATCH"/>
+        </methods>
+      </class> <!-- btes.Assignment.Btes_AssignmwntDemoClass -->
+      <class name="com.facebook_login.LoginTest">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.facebook_login.LoginTest -->
+      <class name="com.facebook_login.OrangeAdminDemo">
+        <methods>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.facebook_login.OrangeAdminDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
